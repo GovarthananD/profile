@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 10, 1.5);
+}
+.hero-section{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("https://images.hdqwalls.com/download/blue-sky-full-of-stars-5k-u2-1366x768.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.name{
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.role{
+  color: #fff;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+.desc{
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.but{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.bttn-link{
+  height: 40px;
+  width: 130px;
+  font-size: 14px;
+  border-radius: 5%;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.bttn-link:hover{
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+}
+.about{
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-section{
+  background-color: #EEE2DC;
+  color: #AC3B61;
+  height: fit-content;
+  width: 100%;
+
+  .education{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 160px;
+    width: 35%;
+    border: 1px solid #AC3B61;
+  }
+}
+.skills{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.frontend{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.front-tools{
+  height: 80px;
+  width: 80px;
+  padding: 10px 10px 10px 10px;
+  margin: 50px;
+}
+.project-section{
+  background-image: url("https://images.hdqwalls.com/download/mr-robot-season-3-4k-rq-1366x768.jpg");
+  height: fit-content;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+}
+.project{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.card-container{
+  box-shadow: 5px 5px 10px #123C69, -5px -5px 10px #123C69;
+  height: 200px;
+  width: 100%;
+  border: none;
+
+  a{
+    text-decoration: none;
+    color: #AC3B61;
+  }
+}
+.card-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: none;
+}
+.names{
+  color: #AC3B61;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 2px;
+}
+.card{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  align-items: center;
+  gap: 50px;
+  justify-content: space-evenly;
+  background: none;
+}
+.contact-section{
+  background-color: #EEE2DC;
+  height: fit-content;
+}
+.contact{
+  font-size: 5rem;
+  font-weight: bold;
+  color: #AC3B61;
+  text-align: center;
+}
+.end-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.end-pic{
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+.sub-end{
+  display: flex;
+  gap: 10px;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.tables{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .table{
+    width: 500px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+
+    .image{
+      height: 250px;
+      width: 250px;
+      object-fit: cover;
+    }
+  }
+  .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .project-section{
+    height: fit-content;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+  .hero-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+
+    .image{
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+    .details{
+      position: relative;
+      bottom: 50px;
+    }
+    .name{
+      font-size: 20px;
+    }
+    .role{
+      font-size: 16px;
+    }
+    .desc{
+      font-size: 15px;
+    }
+
+  }
+  .but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  .project-section{
+    height: fit-content;
+  }
+}
